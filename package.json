@@ -1,0 +1,7 @@
+{
+	"name" : "Cricket-Scorer",
+	"main" : "index.html",
+	"window" : {
+		"toolbar" : false
+	}
+}

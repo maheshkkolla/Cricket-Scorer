@@ -6,9 +6,40 @@
 	<script type="text/javascript" src = "./javaScripts/bootstrap.min.js"></script>
 	<script type="text/javascript" src = "./javaScripts/main.js"></script>
 </head>
-<body>
-	<h1>Welcome to Cricket-Scorer</h1>
-	Upload the team details file:
-	<input type = "file" accept = ".json" id = "fileUploder">
+<body style = "font-size:16px">
+	<div class = "container">
+
+		<div class = "jumbotron">
+			<h1 class = "text-center">Cricket Score Board</h1>
+		</div>
+		<div class = "row">
+			<div class = "col-md-6" >
+				<div class = "page-header"> <h2>Upload Team Details</h2></div>
+				<input type = "file" accept = ".json" id = "fileUploder" class = "form-control"> </br>
+				<div>
+					<div class = "page-header"> <h2>Match Details</h2></div>
+					Number of Overs per Innings:&nbsp;&nbsp;
+					<input type = "number" min = 1 max = 50 value = 1> </br> </br>
+					Select First Batting Team:&nbsp;&nbsp;&nbsp;&nbsp;
+					<select class = "btn btn-default">
+					</select> </br> </br>
+					Select Openers:&nbsp;&nbsp;&nbsp;&nbsp;
+					<select class = "btn btn-default">
+					</select>
+					<select class = "btn btn-default">
+					</select> </br></br>
+					Select First Bowler:&nbsp;&nbsp;&nbsp;&nbsp;
+					<select class = "btn btn-default">
+					</select> </br> </br>
+					<center><button class = "btn btn-default"><a href = "runningMatch.html">Start Playing</a></button></center>
+				</div>
+			</div>
+			<div class = "col-md-4" id = "teamDetailsDiv">
+				<div class = "page-header"> <h2>Teams & Players</h2></div>
+				<table class = "table" id = "teamDetailsTable"></table>
+			</div>
+		</div>
+
+	</div>
 </body>
 </html>
